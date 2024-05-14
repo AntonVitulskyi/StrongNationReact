@@ -12,7 +12,7 @@ import ListOfRegions from 'components/Posts/ListOfPosts/ListOfRegions/ListOfRegi
 import { Box, SectionNews, WrapOfBtn } from './News.styled';
 
 const News = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const theme = useTheme();
   const isLoggedIn = useSelector(isLoggedInSelector);
 

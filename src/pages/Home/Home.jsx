@@ -93,7 +93,7 @@ const Home = () => {
       <FreshNews />
       <Stats />
       <AboutSection>
-        {/* who we are section */}
+        {/* who we are the section */}
         <Container>
           <AboutTextWrapper>
             <Typography

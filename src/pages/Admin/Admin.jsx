@@ -50,7 +50,7 @@ const Admin = () => {
         {isLoggedIn && (
           <div>
             <Typography variant="h2" component="h2" sx={{}}>
-              Ви увійшли як адмін
+              Ви увійшли як адміністратор
             </Typography>
             <Button
               onClick={toLogOutAdmin}
