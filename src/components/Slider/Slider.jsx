@@ -48,17 +48,15 @@ export const AutoPlay = React.memo(({ images, rtl }) => {
 
   return (
     <AutoPlayContainer>
-      <Slider {...settings}>
-        {images.map(img => (
-          <Box key={img}>
-            <StyledImg
-              src={`https://strong-nation.online/api/v2/slider-photo/download/${img}`}
-              alt="зображення демонструє роботу волонтерів"
-              loading="lazy"
-            />
-          </Box>
-        ))}
-      </Slider>
+      {/* <Slider {...settings}>
+        <Box>
+          <StyledImg
+            src={'../../images/sliderImages/1.jpeg'}
+            alt="зображення демонструє роботу волонтерів"
+            loading="lazy"
+          />
+        </Box>
+      </Slider> */}
     </AutoPlayContainer>
   );
 });

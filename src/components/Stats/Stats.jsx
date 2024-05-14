@@ -12,11 +12,11 @@ import { Li, StatsSection, StyledBox, Ul } from './Stats.Styled';
 export const Stats = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchCountry());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchCountry());
+  // }, [dispatch]);
 
-  const { categories } = useSelector(getCountry);
+  // const { categories } = useSelector(getCountry);
   return (
     <StatsSection>
       <Container>
@@ -27,14 +27,15 @@ export const Stats = () => {
         <Ul>
           <Li>
             <Typography variant="h4" component="span">
-              {categories &&
+              {/* {categories &&
                 new Intl.NumberFormat().format(
                   Math.round(
                     categories.filter(
                       category => category.name === 'militaryDonations'
                     )[0]?.number ?? '0'
                   )
-                )}
+                )} */}
+              143443
             </Typography>
             <Typography
               variant="h5"
@@ -50,14 +51,15 @@ export const Stats = () => {
           </Li>
           <Li>
             <Typography variant="h4" component="span">
-              {categories &&
+              {/* {categories &&
                 new Intl.NumberFormat().format(
                   Math.round(
                     categories.filter(
                       category => category.name === 'civiliansDonations'
                     )[0]?.number ?? '0'
                   )
-                )}
+                )} */}
+              52487
             </Typography>
             <Typography
               variant="h5"

@@ -18,9 +18,9 @@ export const ReadMore = props => {
   const [currentId, setCurrentId] = useState(null);
   const oblList = useSelector(getRegions);
 
-  useEffect(() => {
-    dispatch(fetchRegions());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchRegions());
+  // }, [dispatch]);
 
   const handleOpen = e => {
     const id = e.currentTarget.dataset.id;

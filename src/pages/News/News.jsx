@@ -16,9 +16,9 @@ const News = () => {
   const theme = useTheme();
   const isLoggedIn = useSelector(isLoggedInSelector);
 
-  useEffect(() => {
-    dispatch(fetchAllPostsByCountry());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchAllPostsByCountry());
+  // }, [dispatch]);
 
   return (
     <SectionNews>

@@ -33,9 +33,9 @@ export default function FreshNews() {
     return ArrayOfPosts;
   };
 
-  useEffect(() => {
-    dispatch(fetchAllPostsByCountry());
-  }, [dispatch]);
+  // useEffect(() => {s
+  //   dispatch(fetchAllPostsByCountry());
+  // }, [dispatch]);
 
   if (allPosts.length === 0) return;
   return (
