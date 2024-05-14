@@ -1,27 +1,27 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { useMediaQuery } from '@mui/material';
 
 import { setOblId } from 'redux/oblID/oblId-slice';
 import { getFilter } from 'redux/posts/posts-slice';
-import { Circles } from 'components/ReadMore/Circles';
-import { getOblId } from 'redux/oblID/oblId-selectors';
+// import { Circles } from 'components/ReadMore/Circles';
+// import { getOblId } from 'redux/oblID/oblId-selectors';
 import { getRegions } from 'redux/regions/regions-selectors';
 
 import { Text, Path, MapWrap } from './Map.styled';
 
 export const Map = ({ setIsActiveRegion, isActiveRegion }) => {
   const dispatch = useDispatch();
-  const [isShown, setIsShown] = useState(false);
+  // const [isShown, setIsShown] = useState(false);
   const oblList = useSelector(getRegions);
   const svgRef = useRef(null);
 
   const isSmallScreen = useMediaQuery(theme =>
     theme.breakpoints.down('desktop')
   );
-  const oblID = useSelector(getOblId);
+  // const oblID = useSelector(getOblId);
 
   let paths = null;
 
@@ -64,7 +64,7 @@ export const Map = ({ setIsActiveRegion, isActiveRegion }) => {
     const hoveredObl = oblList.find(obl => obl.id === pathId);
     if (hoveredObl) {
       dispatch(setOblId(hoveredObl));
-      setIsShown(true);
+      // setIsShown(true);
     }
   }
 
@@ -400,7 +400,7 @@ export const Map = ({ setIsActiveRegion, isActiveRegion }) => {
           </Text>
         </svg>
       </MapWrap>
-      {isShown && <Circles oblList={oblList} currentId={oblID} />}
+      {/* {isShown && <Circles oblList={oblList} currentId={oblID} />} */}
     </>
   );
 };

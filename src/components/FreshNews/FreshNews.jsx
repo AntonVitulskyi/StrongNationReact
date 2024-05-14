@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import {
   Button,
@@ -12,14 +12,14 @@ import {
 
 import { getAllPosts } from 'redux/posts/posts-selectors';
 import { MoreArrowIcon } from 'components/MockupIcons/MockupIcons';
-import { fetchAllPostsByCountry } from 'redux/posts/posts-operations';
+// import { fetchAllPostsByCountry } from 'redux/posts/posts-operations';
 import ItemOfPost from 'components/Posts/ListOfPosts/ItemOfPost/ItemOfPost';
 
 import { NewsList, TitleBox } from './FreshNews.styled';
 
 export default function FreshNews() {
   const allPosts = useSelector(getAllPosts);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const theme = useTheme();
 
   const isSmallScreen = useMediaQuery(theme =>
