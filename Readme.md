@@ -4,9 +4,9 @@
 
 <p>The site of a Charity organization that promotes and supports volunteering in Ukraine</p>
 
-<a href="https://strong-nation.online/">Original site</a>
+<a href="https://antonvitulskyi.github.io/StrongNationReact">Original site</a>
 
-<a href="smerch88.github.io/StrongNationReact/">Github page</a>
+<a href="https://github.com/AntonVitulskyi/StrongNationReact">Github page</a>
 
 <p>The repository is organized into various directories, each directory contains the code for a specific feature or component of the website. The code is well-documented and follows best practices for React development, including the usage of functional components and hooks.</p>
 
